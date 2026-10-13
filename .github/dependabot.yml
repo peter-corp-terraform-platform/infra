@@ -5,11 +5,17 @@ registries:
     url: https://trial29v6i5.jfrog.io/artifactory/aws-t-local-module/
     username: ${{secrets.USERNAME}}
     password: ${{secrets.PASSWORD}}
+  artifactory-git:
+    type: git
+    url: https://trial29v6i5.jfrog.io/artifactory/aws-t-local-module/
+    username: x-access-token
+    password: ${{secrets.GIT-PAT}}
 
 updates:
   - package-ecosystem: terraform
     directory: "/"
     registries:
       - artifactory-terraform
+      - artifactory-git
     schedule:
       interval: daily

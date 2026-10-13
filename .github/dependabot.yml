@@ -1,0 +1,15 @@
+version: 2
+registries:
+  artifactory-terraform:
+    type: terraform-registry
+    url: https://trial29v6i5.jfrog.io/artifactory/aws-t-local-module/
+    username: ${{secrets.USERNAME}}
+    password: ${{secrets.PASSWORD}}
+
+updates:
+  - package-ecosystem: terraform
+    directory: "/"
+    registries:
+      - artifactory-terraform
+    schedule:
+      interval: weekly

@@ -1,0 +1,14 @@
+{
+  "name": "infra",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Infrastructure configuration and supporting tooling.",
+  "scripts": {
+    "format": "prettier --write package.json .github/dependabot.yml",
+    "format:check": "prettier --check package.json .github/dependabot.yml"
+  },
+  "devDependencies": {
+    "eslint": "^9.0.0",
+    "prettier": "^3.0.0"
+  }
+}

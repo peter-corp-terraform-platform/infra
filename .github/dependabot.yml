@@ -7,7 +7,7 @@ registries:
     password: ${{secrets.PASSWORD}}
   artifactory-git:
     type: git
-    url: https://trial29v6i5.jfrog.io/artifactory/aws-t-local-module/
+    url: https://github.com/peter-corp-terraform-platform/terraform-testing
     username: x-access-token
     password: ${{secrets.GIT-PAT}}
 

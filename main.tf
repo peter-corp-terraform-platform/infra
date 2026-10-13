@@ -3,7 +3,8 @@ provider "aws" {
 }
 
 module "peter_corp_infra" {
-  source = "./peter-corp-infra"
+  source  = "https://trial29v6i5.jfrog.io/artifactory/aws-t-local-module/modules/peter-corp-infra/"
+  version = "1.0.0"
 
   name_prefix            = "peter-corp"
   bucket_name            = "replace-with-a-globally-unique-name"
@@ -15,3 +16,6 @@ module "peter_corp_infra" {
     Project = "terraform-testing"
   }
 }
+
+
+aws-t-local-module/modules/peter-corp-infra

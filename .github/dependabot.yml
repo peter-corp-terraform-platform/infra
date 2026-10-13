@@ -3,7 +3,7 @@ registries:
   artifactory-terraform:
     type: terraform-registry
     url: https://trial29v6i5.jfrog.io/artifactory/aws-t-local-module/
-    token: ${{jfrog-token}}
+    token: ${{secrets.jfrog}}
 
 updates:
   - package-ecosystem: terraform

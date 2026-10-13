@@ -3,8 +3,7 @@ registries:
   artifactory-terraform:
     type: terraform-registry
     url: https://trial29v6i5.jfrog.io/artifactory/aws-t-local-module/
-    username: ${{secrets.USERNAME}}
-    password: ${{secrets.PASSWORD}}
+    token: ${{jfrog-token}}
   artifactory-git:
     type: git
     url: https://github.com/peter-corp-terraform-platform/terraform-testing

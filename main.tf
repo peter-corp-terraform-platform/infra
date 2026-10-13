@@ -16,6 +16,3 @@ module "peter_corp_infra" {
     Project = "terraform-testing"
   }
 }
-
-
-aws-t-local-module/modules/peter-corp-infra

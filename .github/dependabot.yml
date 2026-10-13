@@ -4,17 +4,11 @@ registries:
     type: terraform-registry
     url: https://trial29v6i5.jfrog.io/artifactory/aws-t-local-module/
     token: ${{jfrog-token}}
-  artifactory-git:
-    type: git
-    url: https://github.com/peter-corp-terraform-platform/terraform-testing
-    username: x-access-token
-    password: ${{secrets.GIT-PAT}}
 
 updates:
   - package-ecosystem: terraform
     directory: "/"
     registries:
       - artifactory-terraform
-      - artifactory-git
     schedule:
       interval: daily

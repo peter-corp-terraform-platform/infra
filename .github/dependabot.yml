@@ -3,7 +3,7 @@ registries:
   artifactory-terraform:
     type: terraform-registry
     url: https://trial29v6i5.jfrog.io/artifactory/aws-t-local-module/
-    token: ${{secrets.jfrog}}
+    token: ${{secrets.JFROG}}
   npm-public:
     type: npm-registry
     url: https://registry.npmjs.org

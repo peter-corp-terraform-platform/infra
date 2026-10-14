@@ -3,8 +3,7 @@ registries:
   artifactory-terraform:
     type: terraform-registry
     url: https://trial29v6i5.jfrog.io/artifactory/aws-t-local-module/peter-corp/peter-corp-infra/aws
-    username: ${{secrets.USERNAME}}
-    password: ${{secrets.PASSWORD}}
+    token: ${{secrets.JFROG}}
 
 updates:
   - package-ecosystem: terraform

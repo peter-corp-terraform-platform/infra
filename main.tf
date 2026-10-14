@@ -4,7 +4,7 @@ provider "aws" {
 
 module "peter_corp_infra" {
   source  = "trial29v6i5.jfrog.io/aws-t-local-module__peter-corp/peter-corp-infra/aws"
-  version = "1.0.0"
+  version = "1.1.0"
 
   name_prefix            = "peter-corp"
   bucket_name            = "replace-with-a-globally-unique-name"

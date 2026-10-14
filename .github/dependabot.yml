@@ -4,20 +4,11 @@ registries:
     type: terraform-registry
     url: https://trial29v6i5.jfrog.io/artifactory/aws-t-local-module/
     token: ${{secrets.JFROG}}
-  npm-public:
-    type: npm-registry
-    url: https://registry.npmjs.org
 
 updates:
   - package-ecosystem: terraform
     directory: "/"
     registries:
       - artifactory-terraform
-    schedule:
-      interval: daily
-  - package-ecosystem: npm
-    directory: "/"
-    registries:
-      - npm-public
     schedule:
       interval: daily

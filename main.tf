@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 module "peter_corp_infra" {
-  source  = "https://trial29v6i5.jfrog.io/artifactory/aws-t-local-module/modules/peter-corp-infra/"
+  source  = "trial29v6i5.jfrog.io/aws-t-local-module__peter-corp/peter-corp-infra/aws"
   version = "1.0.0"
 
   name_prefix            = "peter-corp"

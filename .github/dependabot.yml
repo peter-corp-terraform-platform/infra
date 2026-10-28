@@ -4,7 +4,6 @@ registries:
     type: terraform-registry
     url: https://trial29v6i5.jfrog.io/artifactory/aws-t-local-module/peter-corp/peter-corp-infra/aws
     jfrog-oidc-provider-name: github-dependabot
-    replaces-base: true
 
 updates:
   - package-ecosystem: terraform
